@@ -438,7 +438,7 @@ class WelcomePopup {
                 <h3>Prima volta qui?</h3>
                 <p>Conosci la differenza tra i visori standalone e PCVR?</p>
                 <div class="video-preview">
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="VR Headsets" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/82vud7ERKZ0?si=0ryTKpG5C-IjmwTN" title="VR Headsets" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <button class="popup-btn" id="popup-continue">Capito, continua</button>
             </div>
@@ -466,7 +466,7 @@ class WelcomePopup {
 // Floating Help FAB for quiz and hardware pages
 class HelpFAB {
     constructor() {
-        this.videoUrl = 'https://www.youtube.com/embed/dQw4w9WgXcQ';
+        this.videoUrl = 'https://www.youtube.com/embed/82vud7ERKZ0?si=0ryTKpG5C-IjmwTN';
         this.init();
     }
     isTargetPage() {
@@ -507,3 +507,4 @@ class HelpFAB {
         if (btn) btn.addEventListener('click', close);
     }
 }
+
