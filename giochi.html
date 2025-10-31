@@ -5,49 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Giochi VR</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Animated Background Lines -->
-  <div class="background-lines">
-    <div class="wave-line"></div>
-    <div class="wave-line"></div>
-    <div class="wave-line"></div>
-    <div class="wave-line"></div>
-    <div class="wave-line"></div>
-    <div class="wave-line"></div>
-    <div class="wave-line"></div>
-  </div>
+  <div class="animated-bg"></div>
 
-  <header class="header glass-effect">
-    <div class="container">
-      <div class="logo">
-        <a href="index.html" class="logo-link">VR</a>
-      </div>
-      <button class="menu-toggle" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li><a href="storia.html" class="nav-link">STORIA</a></li>
-          <li><a href="giochi.html" class="nav-link">GIOCHI</a></li>
-          <li><a href="headset.html" class="nav-link">HARDWARE</a></li>
-          <li><a href="quiz.html" class="nav-link">QUIZ</a></li>
-          <li><a href="contatti.html" class="nav-link">CONTATTI</a></li>
-        </ul>
-      </nav>
-      <div class="theme-toggle">
-        <button id="theme-switch" class="theme-switch"></button>
+  <header>
+    <a href="index.html" class="logo">VR</a>
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="storia.html">Storia</a>
+        <a href="giochi.html">Giochi</a>
+        <a href="headset.html">Headset</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="contatti.html">Contatti</a>
       </div>
     </div>
   </header>
 
-  <main class="main">
-    <div class="container">
-      <h1 class="page-title">Giochi in Realtà Virtuale</h1>
-      <div class="table-container">
+  <main class="games-page">
+    <h1>Giochi in Realtà Virtuale</h1>
+    <div class="table-container">
       <table>
         <thead>
           <tr>
@@ -118,15 +96,12 @@
           </tr>
         </tbody>
       </table>
-      </div>
     </div>
   </main>
 
-  <footer class="footer">
+  <footer>
     <a href="https://www.instagram.com/astrit_junior?igsh=MXJrZzB3cnRsZGhpNw%3D%3D&utm_source=qr" class="contact-button">Il mio profilo</a>
     <p>&copy; 2025 Astrit Junior Mehmeti. Tutti i diritti riservati.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

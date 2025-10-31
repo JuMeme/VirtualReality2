@@ -1,105 +1,74 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realtà Virtuale - Il Futuro è Qui</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Realtà Virtuale</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Animazione iniziale -->
-    <div id="intro-animation" class="intro-animation">
-        <div class="vr-text">VR</div>
+  <header>
+    <a href="index.html" class="logo">VR</a>
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="storia.html">Storia</a>
+        <a href="giochi.html">Giochi</a>
+        <a href="headset.html">Headset</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="contatti.html">Contatti</a>
+      </div>
     </div>
+  </header>
 
-    <!-- Background dots are injected by script.js -->
+  <main>
+    <h1>Realtà Virtuale</h1>
 
-    <!-- Header -->
-    <header class="header glass-effect">
-        <div class="container">
-            <div class="logo">
-                <a href="#home" class="logo-link">VR</a>
-            </div>
-            <button class="menu-toggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="storia.html" class="nav-link">STORIA</a></li>
-                    <li><a href="giochi.html" class="nav-link">GIOCHI</a></li>
-                    <li><a href="headset.html" class="nav-link">HARDWARE</a></li>
-                    <li><a href="quiz.html" class="nav-link">QUIZ</a></li>
-                    <li><a href="contatti.html" class="nav-link">CONTATTI</a></li>
-                </ul>
-            </nav>
-            <div class="theme-toggle">
-                <button id="theme-switch" class="theme-switch"></button>
-            </div>
-        </div>
-    </header>
+    <section class="content-section">
+      <div class="text">
+        <h2>Cos'è la realtà virtuale?</h2>
+        <p>La realtà virtuale (VR) è una tecnologia che permette di immergersi in un ambiente simulato,
+          creato digitalmente. Indossando dispositivi come visori VR, l’utente può esplorare e
+          interagire con mondi tridimensionali in modo realistico, con il supporto di sensori di
+          movimento. Viene utilizzata in ambiti come il gaming, la formazione, la medicina e
+          l’architettura.
+        </p>
+      </div>
+      <div class="image">
+        <img src="immagini/realtaVirtuale.jpg" alt="VR Image 1" />
+      </div>
+    </section>
 
-    <!-- Main Content -->
-    <main class="main">
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="container">
-                <h1 class="hero-title">
-                    <span class="title-text">Realtà Virtuale</span>
-                </h1>
-                <p class="hero-subtitle">Esplora mondi infiniti, vivi esperienze straordinarie</p>
-            </div>
-        </section>
+    <section class="content-section reverse">
+      <div class="text">
+        <h2>Applicazioni nel quotidiano</h2>
+        <p>Oggi la realtà virtuale è impiegata maggiormente nel gaming ma non è 
+          solo questo: viene usata quotidianamente per l’allenamento fisico, la formazione 
+          professionale, la riabilitazione, il design 3D, le riunioni virtuali e persino il 
+          turismo digitale, offrendo esperienze immersive sempre più utili nella vita di tutti i giorni.</p>
+      </div>
+      <div class="image">
+        <img src="immagini/classroomVR.jpg" alt="VR Image 2" />
+      </div>
+    </section>
 
-        <!-- Features Section -->
-        <section class="features">
-            <div class="container">
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-image">
-                            <img src="immagini/realtaVirtuale.jpg" alt="Realtà Virtuale" class="card-img">
-                            <div class="image-overlay"></div>
-                        </div>
-                        <div class="feature-content">
-                            <h3 class="feature-title">Storia della VR</h3>
-                            <p class="feature-description">Dal Sword of Damocles del 1968 ai moderni visori, scopri l'evoluzione della realtà virtuale attraverso i decenni.</p>
-                        </div>
-                    </div>
+    <section class="content-section">
+      <div class="text">
+        <h2>Distinzioni tra visori</h2>
+        <p>I visori VR si dividono in due categorie: standalone, 
+          che funzionano senza PC e sono pratici e portatili, e PCVR, 
+          che richiedono un computer potente ma offrono grafica e prestazioni superiori.
+           Non sai cosa fa al caso tuo? Fai il nostro pratico quiz per scoprirlo!</p>
+      </div>
+      <div class="image">
+        <img src="immagini/standaloneOrPcvr.jpg" alt="VR Image 3" />
+      </div>
+    </section>
+  </main>
 
-                    <div class="feature-card">
-                        <div class="feature-image">
-                            <img src="immagini/classroomVR.jpg" alt="Giochi VR" class="card-img">
-                            <div class="image-overlay"></div>
-                        </div>
-                        <div class="feature-content">
-                            <h3 class="feature-title">Giochi Immersivi</h3>
-                            <p class="feature-description">Dai ritmici Beat Saber agli adrenalinici SUPERHOT VR, vivi avventure epiche in mondi virtuali.</p>
-                        </div>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-image">
-                            <img src="immagini/standaloneOrPcvr.jpg" alt="Visori VR" class="card-img">
-                            <div class="image-overlay"></div>
-                        </div>
-                        <div class="feature-content">
-                            <h3 class="feature-title">Visori VR</h3>
-                            <p class="feature-description">Standalone come Meta Quest 3 o PCVR come Valve Index: scegli il visore perfetto per le tue esigenze.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <a class="contact-button" href="https://www.instagram.com/astrit_junior?igsh=MXJrZzB3cnRsZGhpNw%3D%3D&utm_source=qr">Il mio profilo</a>
-        <p>&copy; 2025 Astrit Junior Mehmeti. Tutti i diritti riservati.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <footer>
+    <a class="contact-button" href="https://www.instagram.com/astrit_junior?igsh=MXJrZzB3cnRsZGhpNw%3D%3D&utm_source=qr">Il mio profilo</a>
+    <p>&copy; 2025 Astrit Junior Mehmeti. Tutti i diritti riservati.</p>
+  </footer>
 </body>
 </html>
