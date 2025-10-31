@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visori VR</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Animated Background Lines -->
+  <div class="background-lines">
+    <div class="wave-line"></div>
+    <div class="wave-line"></div>
+    <div class="wave-line"></div>
+    <div class="wave-line"></div>
+    <div class="wave-line"></div>
+    <div class="wave-line"></div>
+    <div class="wave-line"></div>
+  </div>
+
+  <header class="header glass-effect">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html" class="logo-link">VR</a>
+      </div>
+      <button class="menu-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="storia.html" class="nav-link">STORIA</a></li>
+          <li><a href="giochi.html" class="nav-link">GIOCHI</a></li>
+          <li><a href="headset.html" class="nav-link">HARDWARE</a></li>
+          <li><a href="quiz.html" class="nav-link">QUIZ</a></li>
+          <li><a href="contatti.html" class="nav-link">CONTATTI</a></li>
+        </ul>
+      </nav>
+      <div class="theme-toggle">
+        <button id="theme-switch" class="theme-switch"></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <h1 class="page-title">Visori VR</h1>
+
+      <div class="headset-section">
+      <h2 class="section-title">Standalone</h2>
+      <p class="section-description">Funziona senza PC: il visore ha già integrati tutti i componenti 
+        necessari come il processore, memoria e schermo. È portatile e facile da usare,
+        ma ha grafica e potenza limitate.</p>
+      
+    <a href="https://www.meta.com/it/en/quest/quest-3/" target="_blank" class="headset-link">
+        <div class="headset-grid">
+            <div class="headset-card">
+            <img src="immagini/image_quest3.png" alt="Meta Quest 3" />
+            <p>Meta Quest 3 - Visore tutto-in-uno con grafica migliorata e passthrough a colori.</p>
+            </div>
+        </a>
+
+    <a href="https://www.picoxr.com/it/products/pico4" target="_blank" class="headset-link">
+        <div class="headset-card">
+          <img src="immagini/image_pico4.png" alt="Pico VR 4" />
+          <p>Pico VR 4 - Alternativa stand-alone con ottimo rapporto qualità/prezzo e hand-tracking.</p>
+        </div>
+        </a>
+      </div>
+
+      <h2 class="section-title">PCVR</h2>
+      <p class="section-description">Necessita un PC: offre grafica superiore,
+         giochi più dettagliati e complessi, ma presenta meno portabilità e una 
+         configurazione più tecnica.</p>
+      
+        <a href="https://store.steampowered.com/valveindex" target="_blank" class="headset-link">
+        <div class="headset-grid">
+            <div class="headset-card">
+            <img src="immagini/image_valveIndex.png" alt="Valve Index" />
+            <p>Valve Index - Visore di fascia alta con controller avanzati per un tracciamento delle mani preciso.</p>
+            </div>
+        </a>
+
+        <a href="https://www.somniumspace.com" target="_blank" class="headset-link">
+            <div class="headset-card">
+            <img src="immagini/image_somnium.png" alt="Somnium VR" />
+            <p>Somnium VR - Visore modulare ad alta risoluzione e aggiornamento con supporto open-source.</p>
+            </div>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a class="contact-button" href="https://www.instagram.com/astrit_junior?igsh=MXJrZzB3cnRsZGhpNw%3D%3D&utm_source=qr">Il mio profilo</a>
+    <p>&copy; 2025 Astrit Junior Mehmeti. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

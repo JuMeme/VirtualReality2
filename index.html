@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtà Virtuale - Il Futuro è Qui</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animazione iniziale -->
+    <div id="intro-animation" class="intro-animation">
+        <div class="vr-text">VR</div>
+    </div>
+
+    <!-- Background dots are injected by script.js -->
+
+    <!-- Header -->
+    <header class="header glass-effect">
+        <div class="container">
+            <div class="logo">
+                <a href="#home" class="logo-link">VR</a>
+            </div>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="storia.html" class="nav-link">STORIA</a></li>
+                    <li><a href="giochi.html" class="nav-link">GIOCHI</a></li>
+                    <li><a href="headset.html" class="nav-link">HARDWARE</a></li>
+                    <li><a href="quiz.html" class="nav-link">QUIZ</a></li>
+                    <li><a href="contatti.html" class="nav-link">CONTATTI</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <button id="theme-switch" class="theme-switch"></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h1 class="hero-title">
+                    <span class="title-text">Realtà Virtuale</span>
+                </h1>
+                <p class="hero-subtitle">Esplora mondi infiniti, vivi esperienze straordinarie</p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <img src="immagini/realtaVirtuale.jpg" alt="Realtà Virtuale" class="card-img">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-title">Storia della VR</h3>
+                            <p class="feature-description">Dal Sword of Damocles del 1968 ai moderni visori, scopri l'evoluzione della realtà virtuale attraverso i decenni.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <img src="immagini/classroomVR.jpg" alt="Giochi VR" class="card-img">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-title">Giochi Immersivi</h3>
+                            <p class="feature-description">Dai ritmici Beat Saber agli adrenalinici SUPERHOT VR, vivi avventure epiche in mondi virtuali.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <img src="immagini/standaloneOrPcvr.jpg" alt="Visori VR" class="card-img">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-title">Visori VR</h3>
+                            <p class="feature-description">Standalone come Meta Quest 3 o PCVR come Valve Index: scegli il visore perfetto per le tue esigenze.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a class="contact-button" href="https://www.instagram.com/astrit_junior?igsh=MXJrZzB3cnRsZGhpNw%3D%3D&utm_source=qr">Il mio profilo</a>
+        <p>&copy; 2025 Astrit Junior Mehmeti. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

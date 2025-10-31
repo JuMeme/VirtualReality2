@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Giochi VR</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Animated Background Lines -->
+  <div class="background-lines">
+    <div class="wave-line"></div>
+    <div class="wave-line"></div>
+    <div class="wave-line"></div>
+    <div class="wave-line"></div>
+    <div class="wave-line"></div>
+    <div class="wave-line"></div>
+    <div class="wave-line"></div>
+  </div>
+
+  <header class="header glass-effect">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html" class="logo-link">VR</a>
+      </div>
+      <button class="menu-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="storia.html" class="nav-link">STORIA</a></li>
+          <li><a href="giochi.html" class="nav-link">GIOCHI</a></li>
+          <li><a href="headset.html" class="nav-link">HARDWARE</a></li>
+          <li><a href="quiz.html" class="nav-link">QUIZ</a></li>
+          <li><a href="contatti.html" class="nav-link">CONTATTI</a></li>
+        </ul>
+      </nav>
+      <div class="theme-toggle">
+        <button id="theme-switch" class="theme-switch"></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <h1 class="page-title">Giochi in Realtà Virtuale</h1>
+      <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Titolo</th>
+            <th>Piattaforma</th>
+            <th>Genere</th>
+            <th>Descrizione</th>
+            <th>Prezzo (€)</th>
+            <th>Icona</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://store.steampowered.com/app/620980/beat_saber/" class="game-link">Beat Saber</a></td>
+            <td>Standalone (Meta Quest 1/2/3), PCVR</td>
+            <td>Ritmico / Musica</td>
+            <td>Taglia blocchi al ritmo della musica con spade laser.</td>
+            <td>~29,99 €</td>
+            <td><img src="immagini/icone_beatsaber.png" alt="Beat Saber" class="game-icon" /></td>
+          </tr>
+          <tr>
+            <td><a href="https://store.steampowered.com/app/617830/SUPERHOT_VR/" class="game-link">SUPERHOT VR</a></td>
+            <td>Standalone (Meta Quest 1/2/3), PCVR</td>
+            <td>Azione / Sparatutto tattico</td>
+            <td>Il tempo si muove solo quando ti muovi, gameplay strategico e coinvolgente.</td>
+            <td>~24,99 €</td>
+            <td><img src="immagini/icone_SUPERHOT.png" alt="SUPERHOT VR" class="game-icon" /></td>
+          </tr>
+          <tr>
+            <td><a href="https://store.steampowered.com/app/1592190/BONELAB/" class="game-link">BONELAB</a></td>
+            <td>Standalone (Meta Quest 2/3), PCVR</td>
+            <td>Azione / Sandbox / Fisica</td>
+            <td>Successore di Boneworks con fisica avanzata e supporto al modding.</td>
+            <td>~29,99 €</td>
+            <td><img src="immagini/icone_BONELAB.png" alt="BONELAB" class="game-icon" /></td>
+          </tr>
+          <tr>
+            <td><a href="https://store.steampowered.com/app/916840/The_Walking_Dead_Saints__Sinners/" class="game-link">The Walking Dead: Saints & Sinners</a></td>
+            <td>Standalone (Meta Quest 2/3), PCVR</td>
+            <td>Survival horror / Narrativo</td>
+            <td>Sopravvivi in una New Orleans infestata da zombie, con crafting e scelte morali.</td>
+            <td>~39,99 €</td>
+            <td><img src="immagini/icone_theWalkingDead.png" alt="The Walking Dead" class="game-icon" /></td>
+          </tr>
+          <tr>
+            <td><a href="https://store.steampowered.com/app/1533390/Gorilla_Tag/" class="game-link">Gorilla Tag</a></td>
+            <td>Standalone (Meta Quest 1/2/3), PCVR</td>
+            <td>Multiplayer / Parkour</td>
+            <td>Movimento basato su braccia in un gioco di tag multiplayer.</td>
+            <td>Gratuito</td>
+            <td><img src="immagini/icone_gorillaTag.png" alt="Gorilla Tag" class="game-icon" /></td>
+          </tr>
+          <tr>
+            <td><a href="https://store.steampowered.com/app/546560/HalfLife_Alyx/" class="game-link">Half-Life: Alyx</a></td>
+            <td>PCVR (SteamVR)</td>
+            <td>Sparatutto / Avventura</td>
+            <td>Prequel della serie Half-Life con interazioni immersive e trama coinvolgente.</td>
+            <td>~49,99 €</td>
+            <td><img src="immagini/icone_alyx.png" alt="Half-Life: Alyx" class="game-icon" /></td>
+          </tr>
+          <tr>
+            <td><a href="https://store.steampowered.com/app/438100/VRChat/" class="game-link">VRChat</a></td>
+            <td>Standalone (Meta Quest 1/2/3), PCVR</td>
+            <td>Social / Sandbox</td>
+            <td>Piattaforma sociale con mondi creati dagli utenti e avatar personalizzati.</td>
+            <td>Gratuito</td>
+            <td><img src="immagini/icone_vrchat.png" alt="VRChat" class="game-icon" /></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a href="https://www.instagram.com/astrit_junior?igsh=MXJrZzB3cnRsZGhpNw%3D%3D&utm_source=qr" class="contact-button">Il mio profilo</a>
+    <p>&copy; 2025 Astrit Junior Mehmeti. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

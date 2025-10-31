@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz - Quale VR è giusto per te?</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Animated Background Lines -->
+  <div class="background-lines">
+    <div class="wave-line"></div>
+    <div class="wave-line"></div>
+    <div class="wave-line"></div>
+    <div class="wave-line"></div>
+    <div class="wave-line"></div>
+    <div class="wave-line"></div>
+    <div class="wave-line"></div>
+  </div>
+  
+  <header class="header glass-effect">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html" class="logo-link">VR</a>
+      </div>
+      <button class="menu-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="storia.html" class="nav-link">STORIA</a></li>
+          <li><a href="giochi.html" class="nav-link">GIOCHI</a></li>
+          <li><a href="headset.html" class="nav-link">HARDWARE</a></li>
+          <li><a href="quiz.html" class="nav-link">QUIZ</a></li>
+          <li><a href="contatti.html" class="nav-link">CONTATTI</a></li>
+        </ul>
+      </nav>
+      <div class="theme-toggle">
+        <button id="theme-switch" class="theme-switch"></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <h1 class="page-title">Quale VR è giusto per te?</h1>
+      <form id="quiz-form" class="quiz-form">
+      <div class="quiz-question">
+        <p>Hai un PC da gaming potente?</p>
+        <input type="radio" id="q1-yes" name="q1" value="pcvr" required />
+        <label for="q1-yes">Sì</label>
+        <input type="radio" id="q1-no" name="q1" value="standalone" />
+        <label for="q1-no">No</label>
+      </div>
+
+      <div class="quiz-question">
+        <p>Pianifichi di usarlo per attività fisica o giochi in movimento?</p>
+        <input type="radio" id="q2-yes" name="q2" value="standalone" required />
+        <label for="q2-yes">Sì</label>
+        <input type="radio" id="q2-no" name="q2" value="pcvr" />
+        <label for="q2-no">No</label>
+      </div>
+
+      <div class="quiz-question">
+        <p>Vuoi giocare a titoli con grafica molto avanzata?</p>
+        <input type="radio" id="q3-yes" name="q3" value="pcvr" required />
+        <label for="q3-yes">Sì</label>
+        <input type="radio" id="q3-no" name="q3" value="standalone" />
+        <label for="q3-no">No</label>
+      </div>
+
+      <div class="quiz-question">
+        <p>Ti dà fastidio usare cavi o dover collegare dispositivi?</p>
+        <input type="radio" id="q4-yes" name="q4" value="standalone" required />
+        <label for="q4-yes">Sì</label>
+        <input type="radio" id="q4-no" name="q4" value="pcvr" />
+        <label for="q4-no">No</label>
+      </div>
+
+      <div class="quiz-question">
+        <p>Ti interessa portarlo facilmente in giro o usarlo in spazi diversi?</p>
+        <input type="radio" id="q5-yes" name="q5" value="standalone" required />
+        <label for="q5-yes">Sì</label>
+        <input type="radio" id="q5-no" name="q5" value="pcvr" />
+        <label for="q5-no">No</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Scopri il tuo visore ideale</button>
+    </form>
+
+      <div id="result" class="quiz-result"></div>
+
+      <div class="quiz-image">
+        <img src="immagini/quizImage.webp" alt="Immagine quiz" />
+      </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a href="https://www.instagram.com/astrit_junior?igsh=MXJrZzB3cnRsZGhpNw%3D%3D&utm_source=qr" class="contact-button">Il mio profilo</a>
+    <p>&copy; 2025 Astrit Junior Mehmeti. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  
+  <script>
+    document.getElementById('quiz-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const form = new FormData(e.target);
+      const answers = [...form.values()];
+      let pcvr = 0;
+      let standalone = 0;
+
+      answers.forEach(answer => {
+        if (answer === "pcvr") pcvr++;
+        else if (answer === "standalone") standalone++;
+      });
+
+      const resultDiv = document.getElementById("result");
+      
+      if (pcvr > standalone) {
+        resultDiv.innerHTML = `
+          <div class="result-card">
+            <h2>🎮 Ti consigliamo un visore PCVR!</h2>
+            <p>Perfetto per te: <strong>Valve Index</strong> o <strong>Somnium VR</strong></p>
+            <p>I visori PCVR offrono la migliore esperienza grafica e accesso a giochi più complessi.</p>
+            <a href="headset.html" class="result-link">Scopri i visori PCVR →</a>
+          </div>
+        `;
+      } else {
+        resultDiv.innerHTML = `
+          <div class="result-card">
+            <h2>🚀 Ti consigliamo un visore Standalone!</h2>
+            <p>Perfetto per te: <strong>Meta Quest 3</strong> o <strong>Pico VR 4</strong></p>
+            <p>I visori standalone sono portatili, facili da usare e perfetti per giochi e attività fisica.</p>
+            <a href="headset.html" class="result-link">Scopri i visori Standalone →</a>
+          </div>
+        `;
+      }
+      
+      resultDiv.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+</html>
